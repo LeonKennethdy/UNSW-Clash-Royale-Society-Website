@@ -92,8 +92,8 @@ const EXECUTIVES = [
   {
     name: "Filipe Abondanza",
     role: "Marketing Director",
-    degree: "Marketing",
-    bio: "Responsible for the advertisement of the club.",
+    degree: "Mechatronics Engineering",
+    bio: "Leads our social media team and is the creative head of advertisement.",
     photo: "assets/Filipe Abondanza.png",
     socials: [
       { label: "Instagram", url: "https://www.instagram.com/_filabon_/" },
@@ -103,7 +103,7 @@ const EXECUTIVES = [
     name: "Ken Ko",
     role: "Arc Delegate",
     degree: "Civil Engineering",
-    bio: "Communicates with the Executive before and after each Arc Clubs General Meeting to pass on information.",
+    bio: "Relays information from Arc to the rest of the team.",
     photo: "assets/Ken Ko.png",
     socials: [
       { label: "Instagram", url: "https://www.instagram.com/kencoyoo/" },

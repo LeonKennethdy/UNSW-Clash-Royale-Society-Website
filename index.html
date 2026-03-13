@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UNSW Clash Royale Society</title>
+    <meta
+      name="description"
+      content="UNSW Clash Royale Society website with socials, executives, and event calendar."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="content.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">
+          <img class="brand-logo" src="assets/LOGO.jpg" alt="Society logo" />
+          <div class="brand-title-wrap">
+            <span class="brand-name">CR Society</span>
+            <span class="university-label">UNSW student society</span>
+          </div>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Open navigation menu">☰</button>
+
+        <nav class="site-nav" aria-label="Main navigation">
+          <a class="active" href="index.html">Home</a>
+          <a href="socials.html">Socials</a>
+          <a href="executives.html">Executives</a>
+          <a href="events.html">Events</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <h1 class="brand-full-name">UNSW Clash Royale Society</h1>
+            <p class="site-tagline">Battle harder. Connect faster. Rule the arena.</p>
+            <p class="site-description">
+              A gaming community for Clash Royale fans at UNSW — tournaments, casual meetups,
+              deck chats, and friendly competition all semester.
+            </p>
+
+            <div class="hero-actions">
+              <a class="primary-button" href="events.html">See upcoming events</a>
+              <a class="secondary-button" href="socials.html">Find our socials</a>
+            </div>
+
+            <div class="home-events-grid home-events-grid--hero" id="homeUpcomingEvents"></div>
+          </div>
+
+          <div class="hero-visual">
+            <img class="hero-image" src="assets/Crowd.png" alt="Clash Royale themed graphic" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-panel">
+        <div>
+          <strong class="brand-full-name">UNSW Clash Royale Society</strong>
+          <p class="footer-note">
+            Built for students who love strategy, community, and a bit of healthy arena chaos.
+          </p>
+        </div>
+        <div>
+          <p>Contact: <a class="contact-email-link" href="mailto:clashroyale.society@unsw.edu.au">clashroyale.society@unsw.edu.au</a></p>
+          <p>© <span class="current-year"></span> All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

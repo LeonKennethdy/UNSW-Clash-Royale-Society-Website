@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events | UNSW Clash Royale Society</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="content.js"></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">
+          <img class="brand-logo" src="assets/LOGO.jpg" alt="Society logo" />
+          <div class="brand-title-wrap">
+            <span class="brand-name">CR Society</span>
+            <span class="university-label">UNSW student society</span>
+          </div>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Open navigation menu">☰</button>
+
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="socials.html">Socials</a>
+          <a href="executives.html">Executives</a>
+          <a class="active" href="events.html">Events</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="simple-page-heading" aria-labelledby="eventsTitle">
+        <h1 id="eventsTitle">Our Calendar</h1>
+      </section>
+
+      <section class="section section--compact-top">
+        <div class="calendar-layout">
+          <div class="calendar-wrap">
+            <div class="calendar-toolbar">
+              <h2 id="monthLabel">Month</h2>
+              <div class="calendar-toolbar__buttons">
+                <button class="icon-button" id="prevMonthButton" type="button" aria-label="Previous month">←</button>
+                <button class="icon-button" id="nextMonthButton" type="button" aria-label="Next month">→</button>
+              </div>
+            </div>
+
+            <div class="weekday-row" id="weekdayRow"></div>
+            <div class="calendar-grid" id="calendarGrid"></div>
+          </div>
+
+          <aside class="panel">
+            <div class="stack-heading">
+              <h2>Upcoming events</h2>
+            </div>
+
+            <div class="event-list" id="upcomingEventsList"></div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <div class="event-modal" id="eventModal" aria-hidden="true">
+      <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalDate">
+        <div class="modal-header">
+          <div>
+            <span class="kicker">Event details</span>
+            <h2 id="modalDate">Selected date</h2>
+          </div>
+          <button class="close-modal" id="closeModalButton" type="button" aria-label="Close event details">✕</button>
+        </div>
+        <div class="modal-content" id="modalBody"></div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container footer-panel">
+        <div>
+          <strong class="brand-full-name">UNSW Clash Royale Society</strong>
+          <p class="footer-note"></p>
+        </div>
+        <div>
+          <p>Contact: <a class="contact-email-link" href="#">Email</a></p>
+          <p>© <span class="current-year"></span> All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
